@@ -1,0 +1,20 @@
+m=5;
+k=2000;
+x0=0.02;
+wn=sqrt(2000/5);
+disp(wn)
+t=0:1:5;
+x=x0*cos(wn*t);
+figure;
+plot(t, x);
+xlabel('Time (s)');
+ylabel('Displacement (m)');
+title('Displacement vs Time');
+grid on;
+v=-x0*wn*sin(wn*t);
+figure;
+plot(t, v);
+xlabel('Time (s)');
+ylabel('Velocity (m/s)');
+title('Velocity vs Time');
+grid on;
